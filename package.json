@@ -6,6 +6,7 @@
   "scripts": {
     "test": "node index.js test.json"
   },
+  "bin": "./index.js",
   "keywords": [
     "json",
     "format"
