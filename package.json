@@ -1,5 +1,5 @@
 {
-  "name": "format-json",
+  "name": "format-jsonfile",
   "version": "1.0.0",
   "description": "A CLI tool to format json files",
   "main": "index.js",

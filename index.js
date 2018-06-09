@@ -3,7 +3,7 @@ const minimist = require('minimist');
 const jf = require('json-format');
 
 const usage = [
-    "Usage: format-json [input json filename] [OPTIONS]",
+    "Usage: format-jsonfile [input json filename] [OPTIONS]",
     "By default, the formatted json is printed to console",
     "",
     "-o | --out    : specify output filename",
