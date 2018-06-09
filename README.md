@@ -1,5 +1,5 @@
 # format-jsonfile
-Just format your json files.
+format-jsonfile is a CLI tool just for formatting your json files.
 
 ## Install
 Using git:
@@ -7,7 +7,13 @@ Using git:
 ```bash
 $ git clone https://github.com/tmokmss/format-jsonfile.git
 $ cd format-jsonfile
-$ npm install.
+$ npm install .
+```
+
+Using npm:
+
+```bash
+$ npm install -g format-jsonfile
 ```
 
 ## Usage
