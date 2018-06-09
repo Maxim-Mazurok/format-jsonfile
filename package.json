@@ -11,7 +11,7 @@
     "format"
   ],
   "author": "tmokmss",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "json-format": "^1.0.1",
     "minimist": "^1.2.0",
