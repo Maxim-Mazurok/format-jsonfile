@@ -1,0 +1,20 @@
+{
+  "name": "format-json",
+  "version": "1.0.0",
+  "description": "A CLI tool to format json files",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js test.json"
+  },
+  "keywords": [
+    "json",
+    "format"
+  ],
+  "author": "tmokmss",
+  "license": "ISC",
+  "dependencies": {
+    "json-format": "^1.0.1",
+    "minimist": "^1.2.0",
+    "npm": "^6.1.0"
+  }
+}
