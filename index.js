@@ -18,14 +18,15 @@ const usage = [
 
 args = process.argv.slice(2);
 opts = {
-    string : ["o", "encode"],
+    string : ["o", "e"],
     boolean : ["t", "s", "h"],
     alias : {
         "width" : "w",
         "help" : "h",
         "tab" : "t",
         "space" : "s",
-        "out" : "o"
+        "out" : "o",
+        "encode" : "e"
     },
     default : {
         _ : null,
@@ -57,7 +58,7 @@ fs.readFile(input, encode, (err, data) => {
 function parseAndOutput(jsonstr) {
     var config = {
         type: argv.t ?  "tab" : "space",
-        size: argv.t ? 1 : argv.size
+        size: argv.t ? 1 : argv.width
     }
     json = JSON.parse(jsonstr);
     var formatted = jf(json, config);
