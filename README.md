@@ -1,5 +1,6 @@
 # format-jsonfile
 format-jsonfile is a CLI tool just for formatting your json files.
+## 👉 This fork uses `require('os').EOL` instead of `\n` in resulting files.
 
 ## Install
 Using git:
