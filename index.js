@@ -3,6 +3,7 @@
 const fs = require('fs');
 const minimist = require('minimist');
 const jf = require('json-format');
+const endOfLine = require('os').EOL;
 
 const usage = [
     "Usage: format-jsonfile [input json filename] [OPTIONS]",
@@ -61,7 +62,7 @@ function parseAndOutput(jsonstr) {
         size: argv.t ? 1 : argv.width
     }
     json = JSON.parse(jsonstr);
-    var formatted = jf(json, config);
+    var formatted = jf(json, config).replace(/\n/g, endOfLine);
     if (output) {
         fs.writeFile(output, formatted, (err) => {
             if (err) return console.log(err);
